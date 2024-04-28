@@ -79,3 +79,17 @@ window.addEventListener('scroll', function() {
       school6.classList.add('animate-left-to-right');
   }
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const burger = document.querySelector('.burger');
+  const navBar = document.querySelector('.new-nav-bar');
+
+  burger.addEventListener('click', function() {
+      navBar.style.display = (navBar.style.display === 'flex') ? 'none' : 'flex';
+  });
+
+  document.addEventListener('click', function(event) {
+      if (!navBar.contains(event.target) && event.target !== burger) {
+          navBar.style.display = 'none';
+      }
+  });
+});
