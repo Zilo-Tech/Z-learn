@@ -57,13 +57,13 @@ header{
 
 .burger,
 .burger-2{
-display: flex;
+display: none;
 width: 2rem;
 height: 1rem;
 flex-direction: column;
 justify-content: space-between;
 position: relative;
-top: 40px;
+top: 30px;
 background-color: cornflowerblue;
 padding: 10px 5px;
 }
@@ -117,6 +117,9 @@ background-color: #fff;
     #logo{
         width: 100px;
         height: 100px;
+    }
+    .burger{
+        display: flex;
     }
 }
 
@@ -194,10 +197,40 @@ main {
     margin-top: 15px;
     margin-left: 15px;
 }
+@media only screen and (max-width:950px) {
+    .video-content{
+        position: absolute;
+        color: white;
+       top: 40%;
+        left: 8%;
+    }
+    #video-background {
+        width: 100%; 
+        max-width: none; 
+    }
+    .download-button-container{
+        display: flex;
+       
+    }
+    .download-button-container img{
+        cursor: pointer;
+        height: 100px;
+        width: 200px;
+    }
+    .download-button-container img:nth-child(2){
+        height: 68px ;
+        width: 133px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .video-content h3{
+        display: none;
+    }
+}
 .new-nav-bar{
-    display: flex;
-
-    background-color: #fff;
+    display: none;
+    
+    background-color: #ece3e3e3;
     border-top: 2px solid black;
     align-items: center;
     width: 50% ;
@@ -211,7 +244,9 @@ main {
 
 }
 .new-nav-bar a{
-
+   text-align: center;
+    width: 80%;
+border-bottom: 1px solid black;
 text-decoration: none;
 color: #0D0C22;
 font-size: 20px;
@@ -220,8 +255,13 @@ font-weight: 400;
 list-style-type: none ;
 padding: .7rem 0;
 }
+.new-nav-bar a:hover{
+    color: #201c6e;
+}
 @media only screen and (max-width:950px) {
-    
+    .new-nav-bar{
+        display: none;
+    }
 }
 .description{
     padding: 104px 90px 104px 90px;
