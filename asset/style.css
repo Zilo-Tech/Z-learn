@@ -54,9 +54,58 @@ header{
     font-size: 2rem;
     color: rgba(53, 175, 53, 0.616); 
 }
+
+.burger,
+.burger-2{
+display: flex;
+width: 2rem;
+height: 1rem;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+top: 40px;
+background-color: cornflowerblue;
+padding: 10px 5px;
+}
+
+.burger span:nth-child(1){
+width: 90%;
+height: .15rem;
+background-color: #fff;
+}
+.burger span:nth-child(2){
+width: 90%;
+height: .15rem;
+background-color: #fff;
+}
+.burger span:nth-child(3){
+width: 90%;
+height: .15rem;
+background-color: #fff;
+}
+.burger-2 span:nth-child(2) {
+    display: none;
+    }
+    .burger-2 {
+    height: 4px;
+    justify-content: space-around;
+    }
+    .burger-2 span:nth-child(1){
+    transform:rotate(45deg);
+    height: .15rem;
+    background-color: black;
+    width: 90%;
+    }
+    .burger-2 span:nth-child(3){
+    transform: rotate(-45deg);
+    height: .15rem;
+    background-color: black;
+    width: 90%;
+    }
 @media  only screen and (max-width : 950px) {
     header{
-        margin-left: 0;
+        margin: 0 auto;
+        width: 90%;
         
     }
     .nav-bar{
@@ -66,10 +115,11 @@ header{
         display: none;
     }
     #logo{
-        width: 200px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 }
+
 
 /* main {
     position: relative;
@@ -143,6 +193,35 @@ main {
     height: 70px ;
     margin-top: 15px;
     margin-left: 15px;
+}
+.new-nav-bar{
+    display: flex;
+
+    background-color: #fff;
+    border-top: 2px solid black;
+    align-items: center;
+    width: 50% ;
+    z-index: 1000;
+    flex-direction: column;
+    position: absolute;
+    height: 88vh;
+    justify-content: space-evenly;
+
+    right: 0;
+
+}
+.new-nav-bar a{
+
+text-decoration: none;
+color: #0D0C22;
+font-size: 20px;
+font-weight: 400;
+ color: black;
+list-style-type: none ;
+padding: .7rem 0;
+}
+@media only screen and (max-width:950px) {
+    
 }
 .description{
     padding: 104px 90px 104px 90px;
@@ -254,6 +333,11 @@ main {
     font-size: 20px;
     margin-top: 5px;
   }
+  @media only  screen and (max-width:950px) {
+    .counter{
+        display: none;
+    }
+  }
   .element-help{
     width: 100%;
     background-color: rgba(117, 110, 110, 0.178);
@@ -322,9 +406,6 @@ main {
     align-items: center;
 }
 
-.help-3 {
-    /* Add styles for help-3 */
-}
 .help-3 .fa{
     font-family: Font Awesome 5 Free;
     font-weight: 900;
@@ -343,6 +424,11 @@ main {
     color: blue;
     font-size: 24px;
     font-family: vollkorn, serif;
+}
+@media only screen and (max-width:950px) {
+    .help-2{
+        display: none;
+    }
 }
 
   .app-program{
