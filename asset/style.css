@@ -553,10 +553,97 @@ padding: .7rem 0;
     font-family: vollkorn, serif;
 }
 @media only screen and (max-width:950px) {
-    .help-2{
-        display: none;
+    .element-help{
+        width: 100%;
+        background-color: rgba(117, 110, 110, 0.178);
+         height: auto;
+      }
+    .help {
+        margin: 0px;
+        padding: 10px 0;
     }
+    
+    .help-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        
+    }
+    
+    .text {
+        width: 100%;
+        
+    }
+    
+    .text h2 {
+        color: rgba(19, 75, 19, 0.616);
+        font-weight: bolder;
+        font-size: 3.5rem;
+        margin: 10 auto;
+    }
+    
+    .text p {
+        font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+        line-height: 2rem;
+        font-size: 1.5rem;
+
+        
+    }
+    .text button {
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    .text button:hover {
+        background-color: rgb(180, 42, 42);
+    }
+    
+.image-1{
+    
+    
+    width: 100%;
+    background: url('/img/phone\ z-learn\ 5.jpg');
+    background-position: center;
+    background-size: 80% 150%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+    
+
 }
+
+.help-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-3 .fa{
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+    font-size: 2rem;
+    color: blue;
+}
+.help-3 h1:nth-child(2){
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%;
+}
+.help-3 p{
+    color: blue;
+    font-size: 24px;
+    font-family: vollkorn, serif;
+}
+}
+
 
   .app-program{
     display: flex;
