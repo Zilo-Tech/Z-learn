@@ -1,3 +1,9 @@
+@media only screen and (max-width:950px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+}
 header{
     width: 90%;
     margin: 15px auto;
@@ -227,13 +233,34 @@ main {
         display: none;
     }
 }
+ @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+    @keyframes fadeOutLeft {
+        0% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
 .new-nav-bar{
+    animation: fadeInRight 0.5s ease forwards; ;
     display: none;
     
     background-color: #ece3e3e3;
     border-top: 2px solid black;
     align-items: center;
-    width: 50% ;
+    width: 90% ;
     z-index: 1000;
     flex-direction: column;
     position: absolute;
@@ -254,6 +281,11 @@ font-weight: 400;
  color: black;
 list-style-type: none ;
 padding: .7rem 0;
+}
+.new-nav-bar .active {
+    color: white;
+    background-color: blue;
+    padding: 10px;
 }
 .new-nav-bar a:hover{
     color: #201c6e;
@@ -342,6 +374,36 @@ padding: .7rem 0;
     font-size: 1.6rem;
     line-height: 2;
 }
+@media only screen and (max-width:950px) {
+    .description{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    }
+    .line{
+        background-color: rgba(19, 75, 19, 0.616);
+        width: 40%;
+        height: 5px;
+        margin-top: 115px;
+    }
+    .descrip-1 h1{ 
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 30%;
+        font-family: Vollkorn, sans-serif;
+        color: rgba(19, 75, 19, 0.616);
+    }
+    .descrip-2 p:nth-child(1){
+        width: 45%;
+    }
+    .descrip-2 p:nth-child(2){
+        width: 40%;
+    }
+    .descrip-1,.descrip-2 p{
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
 .glance{
     width: 90%;
     font-family: Vollkorn, sans-serif;
@@ -375,8 +437,30 @@ padding: .7rem 0;
   }
   @media only  screen and (max-width:950px) {
     .counter{
-        display: none;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: rgba(19, 75, 19, 0.616) ;
+        font-size: 40px;
+        margin-bottom: 3rem;
     }
+      .count {
+        font-weight: bold;
+      }
+       
+      .counter-item {
+        text-align: center;
+      }
+      
+      .label {
+        color: black;
+        font-weight: bolder;
+        display: block;
+        font-size: 10px;
+        margin-top: 5px;
+      }
+    
   }
   .element-help{
     width: 100%;
