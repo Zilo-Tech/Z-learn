@@ -93,3 +93,10 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 });
+function setActiveLink(link) {
+    var links = document.querySelectorAll('.new-nav-bar a');
+  links.forEach(function(item) {
+      item.classList.remove('active');
+  });
+  link.classList.add('active');
+}
