@@ -394,6 +394,7 @@ padding: .7rem 0;
         color: rgba(19, 75, 19, 0.616);
     }
     .descrip-2 p:nth-child(1){
+        margin-left: 10px;
         width: 45%;
     }
     .descrip-2 p:nth-child(2){
