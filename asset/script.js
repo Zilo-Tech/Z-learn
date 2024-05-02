@@ -1,4 +1,9 @@
+let animationTimer;
+
 function isElementInViewport(el) {
+  if (el === null) {
+    return false;
+  }
   const rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
@@ -78,7 +83,12 @@ window.addEventListener('scroll', function() {
   if (isElementInViewport(school6)) {
       school6.classList.add('animate-left-to-right');
   }
+  const explain = document.getElementById('explain');
+  if (isElementInViewport(explain)) {
+    explain.classList.add('animate');
+  }
 });
+
 document.addEventListener("DOMContentLoaded", function() {
   const burger = document.querySelector('.burger');
   const navBar = document.querySelector('.new-nav-bar');
@@ -95,7 +105,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-
+function setActiveLink(link) {
+    var links = document.querySelectorAll('.new-nav-bar a');
+  links.forEach(function(item) {
+      item.classList.remove('active');
+  });
+  link.classList.add('active');
+}

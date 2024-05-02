@@ -1,3 +1,10 @@
+@media only screen and (max-width:950px) {
+    body{
+        margin: 0 ;
+        padding: 0;
+        width: 99%;
+    }
+}
 header{
     width: 90%;
     margin: 15px auto;
@@ -227,13 +234,34 @@ main {
         display: none;
     }
 }
+ @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+    @keyframes fadeOutLeft {
+        0% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
 .new-nav-bar{
+    animation: fadeInRight 0.5s ease forwards; ;
     display: none;
     
     background-color: #ece3e3e3;
     border-top: 2px solid black;
     align-items: center;
-    width: 50% ;
+    width: 90% ;
     z-index: 1000;
     flex-direction: column;
     position: absolute;
@@ -254,6 +282,11 @@ font-weight: 400;
  color: black;
 list-style-type: none ;
 padding: .7rem 0;
+}
+.new-nav-bar .active {
+    color: white;
+    background-color: blue;
+    padding: 10px;
 }
 .new-nav-bar a:hover{
     color: #201c6e;
@@ -328,7 +361,7 @@ padding: .7rem 0;
 .descrip-1 h1{ 
     font-size: 5rem;
     line-height: 6rem;
-    width: 40%;
+    width: 50%;
     font-family: Vollkorn, sans-serif;
     color: rgba(19, 75, 19, 0.616);
 }
@@ -341,6 +374,38 @@ padding: .7rem 0;
 .descrip-1,.descrip-2 p{
     font-size: 1.6rem;
     line-height: 2;
+}
+@media only screen and (max-width:950px) {
+    .description{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    }
+    .line{
+        background-color: rgba(19, 75, 19, 0.616);
+        width: 40%;
+        height: 5px;
+        margin-top: 115px;
+    }
+    .descrip-1 h1{ 
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-left: 15px;
+        width: 50%;
+        font-family: Vollkorn, sans-serif;
+        color: rgba(19, 75, 19, 0.616);
+    }
+    .descrip-2 p:nth-child(1){
+        margin-left: 10px;
+        width: 45%;
+    }
+    .descrip-2 p:nth-child(2){
+        width: 40%;
+    }
+    .descrip-1,.descrip-2 p{
+        font-size: 1rem;
+        line-height: 2;
+    }
 }
 .glance{
     width: 90%;
@@ -373,11 +438,37 @@ padding: .7rem 0;
     font-size: 20px;
     margin-top: 5px;
   }
-  @media only  screen and (max-width:950px) {
-    .counter{
-        display: none;
+  @media only screen and (max-width: 950px) {
+    .counter {
+      width: 90%; /* Adjust as needed */
+      margin: 0 auto; /* Center the counter */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgba(19, 75, 19, 0.616);
+      margin-bottom: 3rem;
+    }
+    
+    .counter-item {
+      width: 48%; /* Two items per row with some space between */
+      text-align: center;
+      margin-bottom: 1rem; /* Add some space between items vertically */
+    }
+  
+    .count {
+      font-size: 40px; /* Adjust as needed */
+      font-weight: bold;
+    }
+  
+    .label {
+      color: black;
+      font-weight: bold;
+      display: block;
+      font-size: 20px;
+      margin-top: 5px;
     }
   }
+  
   .element-help{
     width: 100%;
     background-color: rgba(117, 110, 110, 0.178);
@@ -466,10 +557,109 @@ padding: .7rem 0;
     font-family: vollkorn, serif;
 }
 @media only screen and (max-width:950px) {
-    .help-2{
-        display: none;
+    .element-help{
+        width: 100%;
+        background-color: rgba(117, 110, 110, 0.178);
+         height: auto;
+      }
+    .help {
+        margin: 0px;
+        padding: 10px 0;
     }
+    
+    .help-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        
+    }
+    
+    .text {
+        width: 100%;
+        
+    }
+    
+    .text h2 {
+        text-align: center;
+        color: rgba(19, 75, 19, 0.616);
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin: 10 auto;
+    }
+    
+    .text p {
+        font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+        line-height: 1.5rem;
+        font-size: 0.7rem;
+        width: 90%;
+        margin: 0 auto;       
+
+        
+    }
+    .text button {
+        position: relative;
+        left: 70px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    .text button:hover {
+        background-color: rgb(180, 42, 42);
+    }
+    
+.image-1{
+    
+    margin-top: 20px;
+    width: 100%;
+    background: url('/img/phone\ z-learn\ 5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+    
+
 }
+
+.help-2 img {
+    border-radius: 20px;
+   width: 100%;
+    
+
+}
+
+.help-3 .fa{
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+    font-size: 1rem;
+    position: relative;
+    left: 20px;
+
+    color: blue;
+}
+.help-3 h1:nth-child(2){
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%;
+  margin: 10px auto;
+}
+.help-3 p{
+    width: 80%;
+    margin: 5px auto;
+    color: blue;
+    font-size: 15px;
+    font-family: vollkorn, serif;
+}
+}
+
 
   .app-program{
     display: flex;
@@ -498,6 +688,40 @@ padding: .7rem 0;
   .app-program-description p{
     line-height: 2rem;
     font-size: 24px;
+  }
+  @media only screen and (max-width:950px) {
+    
+  .app-program{
+    display: flex;
+    padding: 64px 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .app-program h1{
+    margin-top: 0;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 5px auto;
+    font-family: monospace Georgia, 'Times New Roman', Times, serif;
+    line-height: 2rem;
+    color: rgba(19, 75, 19, 0.616) ;
+  }
+  .app-program-description{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+  }
+  .line_3{
+    width: 50%;
+    height: 5px;
+    background-color: rgba(19, 75, 19, 0.616);
+  }
+  .app-program-description p{
+    line-height: 2rem;
+    font-size: 24px;
+  }
   }
   #school-program {
     display: flex;
@@ -547,6 +771,56 @@ padding: .7rem 0;
     width: 60px; 
     height: auto; 
   }
+  @media only screen and (max-width:950px) {
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px; 
+        right: 40px; 
+        z-index: 1000; 
+      }
+      
+      .whatsapp-float img {
+        width: 60px; 
+        height: auto; 
+      }
+      #school-program {
+        display: flex;
+       flex-direction: column;
+        justify-content: space-between;
+        padding: 24px 20px;
+        
+    }
+    
+    .school {
+        width: 100%;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+    .image{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .image img {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .school-name{
+        color:rgba(19, 75, 19, 0.616) ;
+        font-size: 2rem;
+        margin-bottom: 15px;
+        font-weight: bolder;
+        line-height: 2rem;
+    }
+    .school-description{
+        font-size: 16px;
+        line-height: 2rem;
+    }
+  }
   .download-and-start{
     display: flex;
     background-color: rgba(117, 110, 110, 0.178);
@@ -567,6 +841,29 @@ padding: .7rem 0;
     font-size: 3rem;
     color: rgba(19, 75, 19, 0.616) ;
   }
+ @media only screen and (max-width:950px) {
+    .download-and-start{
+        display: flex;
+        background-color: rgba(117, 110, 110, 0.178);
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .download-and-start img{
+        width: 180px;
+        height: 100px;
+      }
+      .download-and-start h4{
+        width: 60%;
+        margin: 0;
+        margin-top: 20px;
+        font-family: vollkorn, serif;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        color: rgba(19, 75, 19, 0.616) ;
+        margin-left: 15px;
+      }
+ }
   .know-about-us{
     padding: 104px 90px 104px 90px;
     max-width: 70rem;
@@ -584,6 +881,7 @@ padding: .7rem 0;
   }
   .know-about-us h3{
     font-size: 3rem;
+    height: 1vh;
   }
   .know-about-us #email, #button{
     font-size: 1.2rem;
@@ -599,6 +897,7 @@ padding: .7rem 0;
     color: #4175fc;
     font-weight: bold;
   }
+
 
 
 
