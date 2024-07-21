@@ -1121,7 +1121,7 @@
 
             <div class="col-lg-8">
               <form
-               
+                id="message-form"
                 class="php-email-form"
                 data-aos="fade"
                 data-aos-delay="100"
@@ -1169,12 +1169,12 @@
                   </div>
 
                   <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
+                    <div class="loading d-none" id="loading">Sending...</div>
                     <div class="error-message d-none" id="not-sent">Message not sent. Please check your internet connection and try again</div>
                     <div class="sent-message d-none" id="sent-message">
                       Your message has been sent successfully. Thank you!
                     </div>
-                    <button type="submit" >Send Message</button>
+                    <button type="submit" id="submit-button" class="" >Send Message</button>
                   </div>
                 </div>
               </form>

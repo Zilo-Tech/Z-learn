@@ -184,7 +184,7 @@ h6 {
 }
 
 .php-email-form .loading {
-  display: none;
+  color: #008374;
   background: var(--surface-color);
   text-align: center;
   padding: 15px;
