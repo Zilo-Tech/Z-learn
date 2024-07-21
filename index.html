@@ -37,6 +37,18 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+
+
+          <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "-rK7bXH6EnC6gLanv",
+            });
+        })();
+      </script>
   </head>
 
   <body class="index-page">
@@ -1109,17 +1121,17 @@
 
             <div class="col-lg-8">
               <form
-                action="forms/contact.php"
-                method="post"
+               
                 class="php-email-form"
                 data-aos="fade"
                 data-aos-delay="100"
+                onsubmit="sendMail(event)"
               >
                 <div class="row gy-4">
                   <div class="col-md-6">
                     <input
                       type="text"
-                      name="name"
+                      id="name"
                       class="form-control"
                       placeholder="Your Name"
                       required=""
@@ -1130,7 +1142,7 @@
                     <input
                       type="email"
                       class="form-control"
-                      name="email"
+                      id="email"
                       placeholder="Your Email"
                       required=""
                     />
@@ -1140,7 +1152,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      name="subject"
+                      id="subject"
                       placeholder="Subject"
                       required=""
                     />
@@ -1149,7 +1161,7 @@
                   <div class="col-md-12">
                     <textarea
                       class="form-control"
-                      name="message"
+                      id="message"
                       rows="8"
                       placeholder="Message"
                       required=""
@@ -1158,12 +1170,11 @@
 
                   <div class="col-md-12 text-center">
                     <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
+                    <div class="error-message d-none" id="not-sent">Message not sent. Please check your internet connection and try again</div>
+                    <div class="sent-message d-none" id="sent-message">
+                      Your message has been sent successfully. Thank you!
                     </div>
-
-                    <button type="submit">Send Message</button>
+                    <button type="submit" >Send Message</button>
                   </div>
                 </div>
               </form>

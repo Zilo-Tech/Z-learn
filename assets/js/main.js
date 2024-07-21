@@ -1,10 +1,22 @@
-/**
-* Template Name: Impact
-* Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+function sendMail(event){
+  event.preventDefault();
+  let parms = {
+    name : document.getElementById("name").value,
+    email : document.getElementById("email").value,
+    subject : document.getElementById("subject").value,
+    message : document.getElementById("message").value,
+
+  }
+
+  emailjs.send("service_zazf9qh","template_ex4z0rl",parms).then(function(){
+    document.getElementById("sent-message").classList.remove("d-none");
+    document.getElementById("not-sent").classList.add("d-none");},
+    function(error){
+      document.getElementById("not-sent").classList.remove("d-none");
+      document.getElementById("sent-message").classList.add("d-none");
+    }
+  )
+}
 
 (function() {
   "use strict";
