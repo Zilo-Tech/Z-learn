@@ -1,5 +1,14 @@
 function sendMail(event){
   event.preventDefault();
+
+  const button = document.getElementById("submit-button");
+  const buttontext = document.getElementById("loading");
+  const form = document.getElementById("message-form");
+  button.classList.add("d-none");
+  buttontext.classList.remove("d-none");
+  document.getElementById("not-sent").classList.add("d-none");
+  document.getElementById("sent-message").classList.add("d-none");
+
   let parms = {
     name : document.getElementById("name").value,
     email : document.getElementById("email").value,
@@ -10,10 +19,16 @@ function sendMail(event){
 
   emailjs.send("service_zazf9qh","template_ex4z0rl",parms).then(function(){
     document.getElementById("sent-message").classList.remove("d-none");
-    document.getElementById("not-sent").classList.add("d-none");},
+    document.getElementById("not-sent").classList.add("d-none");
+    button.classList.remove("d-none");
+    buttontext.classList.add("d-none");
+    form.reset();
+  },
     function(error){
       document.getElementById("not-sent").classList.remove("d-none");
       document.getElementById("sent-message").classList.add("d-none");
+      button.classList.remove("d-none");
+      buttontext.classList.add("d-none");;
     }
   )
 }
