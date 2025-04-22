@@ -169,6 +169,18 @@
         .download-btn:hover::after {
             left: 100%;
         }
+
+        .green-text{
+            color: #446d6d;
+        }
+
+        .green-bg{
+            background-color: #446d6d;
+        }
+
+        .green-bg:hover{
+            background-color: #294d4d;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -177,7 +189,7 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <div class="text-3xl font-bold text-primary font-display">Z-<span class="text-secondary">Learn</span></div>
+                    <div class="text-3xl font-bold green-text font-display">Z-<span class="green-text">Learn</span></div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-dark hover:text-primary font-medium transition-colors duration-300">Home</a>
@@ -185,7 +197,7 @@
                     <a href="#features" class="text-dark hover:text-primary font-medium transition-colors duration-300">Features</a>
                     <a href="#concours" class="text-dark hover:text-primary font-medium transition-colors duration-300">Concours</a>
                     <a href="#guide" class="text-dark hover:text-primary font-medium transition-colors duration-300">User Guide</a>
-                    <a href="#download" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-all duration-300 glow font-medium">Download</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.zilotech.z_learns&hl=en" class="green-bg text-white px-6 py-2 rounded-lg  transition-all duration-300 glow font-medium">Download</a>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-dark focus:outline-none">
@@ -201,7 +213,7 @@
                     <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100">Features</a>
                     <a href="#concours" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100">Concours</a>
                     <a href="#guide" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:bg-gray-100">User Guide</a>
-                    <a href="#download" class="block px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-primary-dark">Download</a>
+                    <a href="#download" class="block px-3 py-2 rounded-md text-base font-medium green-bg text-white ">Download</a>
                 </div>
             </div>
         </div>
@@ -216,7 +228,7 @@
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-display leading-tight">Z-Learn, Your <span class="text-yellow-300">Premium</span> Study Companion</h1>
                 <p class="text-lg md:text-xl mb-8 opacity-90">Are you feeling lost after writing the GCE? Worry not, because Z-Learn is here to guide you and resolve all your concerns, paving the way for your success with past questions and much more.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#download" class="download-btn bg-white text-primary font-bold px-8 py-3 rounded-lg hover:bg-gray-50 transition-all duration-500 text-center">
+                    <a href="https://play.google.com/store/apps/details?id=com.zilotech.z_learns&hl=en" class="download-btn bg-white green-text font-bold px-8 py-3 rounded-lg hover:bg-gray-50 transition-all duration-500 text-center">
                         <span class="relative z-10">Download Now <i class="fas fa-arrow-down ml-2"></i></span>
                     </a>
                     <a href="#features" class="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition-all duration-300 text-center">
@@ -239,22 +251,22 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-md transition-all duration-300">
-                    <div class="text-4xl text-primary mb-2"><i class="fas fa-book-open"></i></div>
+                    <div class="text-4xl green-text mb-2"><i class="fas fa-book-open"></i></div>
                     <h3 class="text-xl font-bold mb-2 font-display">500+ Past Exams</h3>
                     <p class="text-gray-600">Comprehensive question bank</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-md transition-all duration-300">
-                    <div class="text-4xl text-primary mb-2"><i class="fas fa-robot"></i></div>
+                    <div class="text-4xl green-text mb-2"><i class="fas fa-robot"></i></div>
                     <h3 class="text-xl font-bold mb-2 font-display">Z-Bot AI</h3>
                     <p class="text-gray-600">Personalized guidance</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-md transition-all duration-300">
-                    <div class="text-4xl text-primary mb-2"><i class="fas fa-users"></i></div>
+                    <div class="text-4xl green-text mb-2"><i class="fas fa-users"></i></div>
                     <h3 class="text-xl font-bold mb-2 font-display">Peer Network</h3>
                     <p class="text-gray-600">Learn with others</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-md transition-all duration-300">
-                    <div class="text-4xl text-primary mb-2"><i class="fas fa-tasks"></i></div>
+                    <div class="text-4xl green-text mb-2"><i class="fas fa-tasks"></i></div>
                     <h3 class="text-xl font-bold mb-2 font-display">Smart Planner</h3>
                     <p class="text-gray-600">Stay organized</p>
                 </div>
@@ -277,24 +289,24 @@
                     <p class="text-gray-700 mb-6 text-lg leading-relaxed">Z-Learn mobile application is your gateway to succeed in various kinds of concours Examinations in Cameroon. Tailored with over 500+ past concours Questions and answers, AI Chatbot for fast, personal communication and accurate responses.</p>
                     <div class="grid grid-cols-2 gap-6 mt-8">
                         <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-all duration-300">
-                            <div class="text-3xl font-bold text-primary mb-2 font-display">10K+</div>
+                            <div class="text-3xl font-bold green-text mb-2 font-display">10K+</div>
                             <p class="text-gray-600">Happy students</p>
                         </div>
                         <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-all duration-300">
-                            <div class="text-3xl font-bold text-primary mb-2 font-display">500+</div>
+                            <div class="text-3xl font-bold green-text mb-2 font-display">500+</div>
                             <p class="text-gray-600">Past questions</p>
                         </div>
                         <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-all duration-300">
-                            <div class="text-3xl font-bold text-primary mb-2 font-display">24/7</div>
+                            <div class="text-3xl font-bold green-text mb-2 font-display">24/7</div>
                             <p class="text-gray-600">Customer Service</p>
                         </div>
                         <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-all duration-300">
-                            <div class="text-3xl font-bold text-primary mb-2 font-display">5.0</div>
+                            <div class="text-3xl font-bold green-text mb-2 font-display">5.0</div>
                             <p class="text-gray-600">Star rating</p>
                         </div>
                     </div>
                     <div class="mt-8">
-                        <a href="#download" class="download-btn bg-primary text-white font-bold px-8 py-3 rounded-lg hover:bg-primary-dark transition-all duration-500 inline-block">
+                        <a href="#download" class="download-btn green-bg text-white font-bold px-8 py-3 rounded-lg transition-all duration-500 inline-block">
                             <span class="relative z-10">Download Z-Learn today</span>
                         </a>
                     </div>
@@ -314,48 +326,48 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-gray-50 p-8 rounded-xl feature-card relative z-10">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-book"></i></div>
+                    <div class="green-text text-4xl mb-4"><i class="fas fa-book"></i></div>
                     <h3 class="text-xl font-bold mb-3 font-display">500+ Past Exam Questions</h3>
                     <p class="text-gray-600">More than 500 past concour questions available ranging from 2017 to 2023 for the different concoure in Cameroon.</p>
                 </div>
                 
                 <!-- Feature 2 -->
                 <div class="bg-gray-50 p-8 rounded-xl feature-card relative z-10">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-robot"></i></div>
+                    <div class="green-text text-4xl mb-4"><i class="fas fa-robot"></i></div>
                     <h3 class="text-xl font-bold mb-3 font-display">Z-bot AI Assistant</h3>
                     <p class="text-gray-600">A personal AI assistant that helps in guiding and providing answers to past questions with intelligent explanations.</p>
                 </div>
                 
                 <!-- Feature 3 -->
                 <div class="bg-gray-50 p-8 rounded-xl feature-card relative z-10">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-comments"></i></div>
+                    <div class="green-text text-4xl mb-4"><i class="fas fa-comments"></i></div>
                     <h3 class="text-xl font-bold mb-3 font-display">Peer Collaboration</h3>
                     <p class="text-gray-600 mb-4">A Whatsapp forum with students preparing for concours where you can share ideas and collaborate with each other.</p>
-                    <a href="#" class="text-primary font-medium hover:underline inline-flex items-center">
+                    <a href="#" class="green-text font-medium hover:underline inline-flex items-center">
                         Join group <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
                 
                 <!-- Feature 4 -->
                 <div class="bg-gray-50 p-8 rounded-xl feature-card relative z-10">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-school"></i></div>
+                    <div class="green-text text-4xl mb-4"><i class="fas fa-school"></i></div>
                     <h3 class="text-xl font-bold mb-3 font-display">Schools Directory</h3>
                     <p class="text-gray-600 mb-4">List of different schools with competitive entrance exams, the various departments in the schools, years of study and certificates they offer.</p>
-                    <a href="#" class="text-primary font-medium hover:underline inline-flex items-center">
+                    <a href="#" class="green-text font-medium hover:underline inline-flex items-center">
                         See schools <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
                 
                 <!-- Feature 5 -->
                 <div class="bg-gray-50 p-8 rounded-xl feature-card relative z-10">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-bullhorn"></i></div>
+                    <div class="green-text text-4xl mb-4"><i class="fas fa-bullhorn"></i></div>
                     <h3 class="text-xl font-bold mb-3 font-display">Announcements</h3>
                     <p class="text-gray-600">Regular updates about schools such as the launching of their various competitive exams, requirements for the exm, written dates and results of successful candidates.</p>
                 </div>
                 
                 <!-- Feature 6 -->
                 <div class="bg-gray-50 p-8 rounded-xl feature-card relative z-10">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-tasks"></i></div>
+                    <div class="green-text text-4xl mb-4"><i class="fas fa-tasks"></i></div>
                     <h3 class="text-xl font-bold mb-3 font-display">Smart To-do List</h3>
                     <p class="text-gray-600">Helps to schedule your time for effective an ensures proper preparation for your exams with intelligent reminders.</p>
                 </div>
@@ -375,7 +387,7 @@
                 <!-- Testimonial 1 -->
                 <div class="bg-white p-8 rounded-xl shadow-sm testimonial-card">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mr-4">D</div>
+                        <div class="w-12 h-12 rounded-full green-bg flex items-center justify-center text-white font-bold mr-4">D</div>
                         <div>
                             <h4 class="font-bold font-display">Desmond</h4>
                             <p class="text-gray-600 text-sm">Student at NAHPI</p>
@@ -394,7 +406,7 @@
                 <!-- Testimonial 2 -->
                 <div class="bg-white p-8 rounded-xl shadow-sm testimonial-card">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mr-4">K</div>
+                        <div class="w-12 h-12 rounded-full green-bg flex items-center justify-center text-white font-bold mr-4">K</div>
                         <div>
                             <h4 class="font-bold font-display">Kelly</h4>
                             <p class="text-gray-600 text-sm">Student at FHS</p>
@@ -413,7 +425,7 @@
                 <!-- Testimonial 3 -->
                 <div class="bg-white p-8 rounded-xl shadow-sm testimonial-card">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mr-4">F</div>
+                        <div class="w-12 h-12 rounded-full green-bg flex items-center justify-center text-white font-bold mr-4">F</div>
                         <div>
                             <h4 class="font-bold font-display">Faith</h4>
                             <p class="text-gray-600 text-sm">Student at COLTECH</p>
@@ -431,7 +443,7 @@
             </div>
             
             <div class="text-center mt-16">
-                <a href="#download" class="download-btn bg-primary text-white font-bold px-8 py-3 rounded-lg hover:bg-primary-dark transition-all duration-500 inline-block">
+                <a href="#download" class="download-btn green-bg text-white font-bold px-8 py-3 rounded-lg transition-all duration-500 inline-block">
                     <span class="relative z-10">Download Z-Learn today and be amongst those giving testimonies</span>
                 </a>
             </div>
@@ -449,28 +461,28 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <!-- Step 1 -->
                 <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
+                    <div class="w-16 h-16 green-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
                     <h3 class="font-bold mb-2 font-display">Download & Install</h3>
                     <p class="text-gray-600">Get the app from Play Store</p>
                 </div>
                 
                 <!-- Step 2 -->
                 <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
+                    <div class="w-16 h-16 green-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
                     <h3 class="font-bold mb-2 font-display">Create Account</h3>
                     <p class="text-gray-600">Sign up with your details</p>
                 </div>
                 
                 <!-- Step 3 -->
                 <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
+                    <div class="w-16 h-16 green-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
                     <h3 class="font-bold mb-2 font-display">Select School</h3>
                     <p class="text-gray-600">Choose your target institution</p>
                 </div>
                 
                 <!-- Step 4 -->
                 <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">4</div>
+                    <div class="w-16 h-16 green-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">4</div>
                     <h3 class="font-bold mb-2 font-display">Start Learning</h3>
                     <p class="text-gray-600">Access materials and practice</p>
                 </div>
@@ -525,21 +537,21 @@
             <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <!-- Address -->
                 <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-all duration-300">
-                    <div class="text-3xl text-primary mb-4"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text-3xl green-text mb-4"><i class="fas fa-map-marker-alt"></i></div>
                     <h3 class="font-bold mb-2 font-display">Address</h3>
                     <p class="text-gray-600">Bambili, Bamenda, Cameroon</p>
                 </div>
                 
                 <!-- Phone -->
                 <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-all duration-300">
-                    <div class="text-3xl text-primary mb-4"><i class="fas fa-phone-alt"></i></div>
+                    <div class="text-3xl green-text mb-4"><i class="fas fa-phone-alt"></i></div>
                     <h3 class="font-bold mb-2 font-display">Call Us</h3>
-                    <p class="text-gray-600">+237 6 94 02 40 43</p>
+                    <p class="text-gray-600">+237 6 72 38 45 79</p>
                 </div>
                 
                 <!-- Email -->
                 <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-all duration-300">
-                    <div class="text-3xl text-primary mb-4"><i class="fas fa-envelope"></i></div>
+                    <div class="text-3xl green-text mb-4"><i class="fas fa-envelope"></i></div>
                     <h3 class="font-bold mb-2 font-display">Email Us</h3>
                     <p class="text-gray-600">zlearnzilotech@gmail.com</p>
                 </div>
@@ -555,9 +567,9 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-6 font-display">Ready to ace your concours exams?</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Download Z-Learn today and start your journey to success with the best study companion.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://play.google.com/store/apps/details?id=com.zilotech.z_learns&hl=en" class="bg-white text-primary font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 inline-flex items-center justify-center glow">
+                <a href="https://play.google.com/store/apps/details?id=com.zilotech.z_learns&hl=en" class="bg-white green-text font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 inline-flex items-center justify-center glow">
                     <i class="fab fa-google-play text-2xl mr-2"></i>
-                    <div>
+                    <div class="green-text">
                         <div class="text-xs">GET IT ON</div>
                         <div class="text-lg font-display">Google Play</div>
                     </div>
@@ -606,7 +618,7 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-phone-alt mt-1 mr-2"></i>
-                            <span>+237 6 94 02 40 43</span>
+                            <span>+237 6 72 38 45 79, +237 6 81 77 55 74</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1 mr-2"></i>
@@ -625,12 +637,16 @@
                         <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
                             <i class="fab fa-twitter"></i>
                         </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
                         <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition">
                             <i class="fab fa-youtube"></i>
                         </a>
+
                     </div>
                 </div>
             </div>
